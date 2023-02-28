@@ -1,0 +1,43 @@
+{
+  "name": "boilerplate-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://github.com/josrenyer/boilerplate-back#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josrenyer/boilerplate-back.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josrenyer/boilerplate-back/issues"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --silent --detectOpenHandles --verbose",
+    "dev": "nodemon index.js",
+    "seed": "node ./seeders/seeders.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^6.15.0",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "nodemailer": "^6.9.1",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.28.0",
+    "sequelize-cli": "^6.5.2"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  }
+}
