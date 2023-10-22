@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 //app.use(express.static(path.join(__dirname, 'public')));
-
+app.get("/", (req, res) => {console.log("Todo copas")});
 app.use("/vehicles", carsRouter);
 app.use("/users", userRouter);
 app.use("/messages", messagesRouter);
